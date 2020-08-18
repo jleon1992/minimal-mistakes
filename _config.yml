@@ -41,21 +41,21 @@ titlecase: true
 
 # Site owner
 owner:
-  name: Michael Rose
+  name: Julian Leon
   avatar: bio-photo.jpg
-  bio: "Just another boring, time traveling, tattooed, designer from Buffalo New York."
+  bio: "Creative, Innovative, Tech Savvy, Web developer with a passion for learning."
   disqus-shortname: minimalmistakes
-  twitter: mmistakes
-  facebook: michaelrose
+  twitter: JulianL48306736
+  facebook: julian.h.leon
   google:
-    plus: MichaelRoseDesign
+    plus: jleon1992
     analytics: UA-2011187-3
     verify: UQj93ERU9zgECodaaXgVpkjrFn9UrDMEzVamacSoQ8Y
     ad-client: ca-pub-7328585512091257
     ad-slot: 7855747535
   bing-verify: D81F4C18A6CB3018F64D7C827D953DFD
-  github: mmistakes
-  instagram: mmistakes
+  github: jleon1992
+  instagram: j_grilla
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
