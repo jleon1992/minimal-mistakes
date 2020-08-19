@@ -19,6 +19,20 @@ I know it isn't the coolest thing in the world but this was the first successful
 
 A few months ago I tried learning how to use Jekyll, Github Pages and more and was so lost compared to now. It only took me a few days to learn the basics of both. I am actually learning how to use Jekyll as I am writing this post. I am learning how to write posts using [Markdown](https://daringfireball.net/projects/markdown/)
 
+{% highlight javascript %}
+describe('repair function', () => {
+        it('can repair the durability of item to 100', () => {
+            const expectedOutput = 100
+            const repairItem = enhancer.repair(item1)
+            const actualOutput = repairItem.durability
+
+            expect(actualOutput).toBe(expectedOutput)
+            // This is the most relevant test for this function
+            expect(item1.durability).toBeLessThanOrEqual(actualOutput)
+        })
+    })
+{% endhighlight %}
+
 
 * Using a star for bullet ponts
 * Double star for bold text
