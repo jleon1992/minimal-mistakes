@@ -5,7 +5,7 @@ excerpt: "Custom written post descriptions are the way to go... if you're not la
 tags: [first post, jest, documentation, coding, web development, unit testing, test]
 comments: true
 image:
-  feature: jest.jpg
+  feature: jest.png
   credit: Medium
   creditlink: https://medium.com/@jrwebdev/give-jest-another-go-86ca3d00f75
 ---
@@ -21,10 +21,12 @@ A few months ago I tried learning how to use Jekyll, Github Pages and more and w
 
 In pug Portland incididunt mlkshk put a bird on it vinyl quinoa. **[Terry Richardson](#) shabby chic +1**, scenester Tonx excepteur tempor fugiat voluptate fingerstache aliquip nisi next level. Farm-to-table hashtag Truffaut, Odd Future ex meggings gentrify single-origin coffee try-hard 90's.
 
-* Sartorial hoodie
-* Labore viral forage
-* Tote bag selvage
-* DIY exercitation et id ugh tumblr church-key
+* Using a star for bullet ponts
+* Double star for bold text
+* Square brackets followed by parenthesis for links
+* *text wrapperd with stars for italics*
+*  **Bold text wrapped with double stars**
+* Headers using double octothorps
 
 Incididunt umami sriracha, ethical fugiat VHS ex assumenda yr irure direct trade. Marfa Truffaut bicycle rights, kitsch placeat Etsy kogi asymmetrical. Beard locavore flexitarian, kitsch photo booth hoodie plaid ethical readymade leggings yr.
 
