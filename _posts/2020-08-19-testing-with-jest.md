@@ -14,24 +14,38 @@ Today was my first experience actually using the documentation to figure things 
 
 Well having finished my assignment early I decided to play around and see what other tests I could run. Upon browsing through tests I found two assertions that were perfect for what I was trying to test. The expect toBeGreaterThan and toBeLessThan was perfect because I was testing two function that took an object and in one function returned a modified version of that object with a property with an increased value and the other where the value was decreased.
 
+{% highlight javascript %}
+describe('fail function', () => {
+        it('can modify an item according to the rules defined by client when it fails', () => {
+            const failItem = enhancer.fail(item2)
+
+            const actualDurabilityOutput = failItem.durability
+            const expectedDurability = failItem.durability = 40
+            expect(actualDurabilityOutput).toBe(expectedDurability)
+            expect(failItem).toBeDefined()
+            // This is the most relevant test for this function
+            expect(failItem.durability).toBeLessThan(item2.durability)
+        })
+    })
+    describe('success function', () => {
+        it('will modify item correctly if it passes', () => {
+            const successItem = enhancer.success(item2)
+
+            const expectedEnhancement = successItem.enhancement = 16
+            const actualEnhancementOutput = successItem.enhancement
+            expect(expectedEnhancement).toBe(actualEnhancementOutput)
+            expect(successItem).toBeDefined()
+            // This is the most relevant test for this function
+            expect(successItem.enhancement).toBeGreaterThan(item2.enhancement)
+        })
+    })
+{% end highlight%}
 I know it isn't the coolest thing in the world but this was the first successfull atempt at actually getting something out of the documentations. Now i am empowered knowing how to work with 3rd party libraries.
 ## Learning how to use Jekyll
 
 A few months ago I tried learning how to use Jekyll, Github Pages and more and was so lost compared to now. It only took me a few days to learn the basics of both. I am actually learning how to use Jekyll as I am writing this post. I am learning how to write posts using [Markdown](https://daringfireball.net/projects/markdown/)
 
-{% highlight javascript %}
-describe('repair function', () => {
-        it('can repair the durability of item to 100', () => {
-            const expectedOutput = 100
-            const repairItem = enhancer.repair(item1)
-            const actualOutput = repairItem.durability
 
-            expect(actualOutput).toBe(expectedOutput)
-            // This is the most relevant test for this function
-            expect(item1.durability).toBeLessThanOrEqual(actualOutput)
-        })
-    })
-{% endhighlight %}
 
 
 * Using a star for bullet ponts
